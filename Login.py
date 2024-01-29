@@ -5,7 +5,7 @@ import time
 options = Options()
 options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=options)
-driver.get('https://www.magnusonhotels.com/')
+driver.get('https://uat.magnusonhotels.com/')
 driver.maximize_window()
 driver.find_element(By.CLASS_NAME, "loginbtn").click()
 # Enter email
@@ -54,6 +54,7 @@ driver.switch_to.frame(iframe_CVV)
 CVV_value = driver.find_element(By.XPATH,"/html/body/form/input")
 CVV_value.send_keys("^$%")
 driver.switch_to.default_content()
+driver.find_element(By.XPATH,"/html/body/div[6]/div/div[2]/form/div[3]/button").click()
 
 
 
