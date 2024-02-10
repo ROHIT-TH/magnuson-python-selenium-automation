@@ -1,2 +1,0 @@
-# magnuson-python-selenium-automation
- 
