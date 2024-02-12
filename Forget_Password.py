@@ -10,6 +10,9 @@ import time
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 log_file_name = f'selenium_logs_{timestamp}.log'
 
+
+
+# ghfdhgf
 # Configure logging
 logging.basicConfig(filename='log/Forget_password.txt', level=logging.INFO, format='%(message)s')
 
